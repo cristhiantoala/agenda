@@ -55,14 +55,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-<<<<<<< HEAD
-=======
 		<dependency>
 			<groupId>io.github.jpenren</groupId>
 			<artifactId>thymeleaf-spring-data-dialect</artifactId>
 			<version>3.6.0</version>
 		</dependency>
->>>>>>> 2745562bca63603c9b3a057becc04471228b6d63
 	</dependencies>
 
 	<build>
