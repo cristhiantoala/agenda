@@ -22,8 +22,24 @@
 <div class="text-end">
     <a href="/nuevo" class="btn btn-primary"> <i class="fa fa-plus"></i> </a>
 
+<<<<<<< HEAD
 
 </div>
+=======
+</div>
+<form action=" " autocomplete="off">
+    <div class="row">
+        <div class="col-lg-3 col-md-4">
+            <div class="input-group mb-3 ">
+                <button class="btn btn-primary" type="submit" id="button-addon1"><i class="fa fa-search"></i></button>
+                <input type="text" name="busqueda" class="form-control" placeholder="Buscar por nombre" th:value="${param.busqueda}">
+            </div>
+        </div>
+
+    </div>
+</form>
+
+>>>>>>> 2745562bca63603c9b3a057becc04471228b6d63
 <table class="table table-hover">
     <thead>
     <tr>
@@ -37,7 +53,11 @@
     </tr>
     </thead>
     <tbody>
+<<<<<<< HEAD
     <tr th:each="contacto : ${contactos}" th:object="${contacto}">
+=======
+    <tr th:each="contacto : ${contactoPage}" th:object="${contacto}">
+>>>>>>> 2745562bca63603c9b3a057becc04471228b6d63
         <td th:text="*{id}"></td>
         <td th:text="*{nombre}"></td>
         <td th:text="*{#temporals.format(fechaNacimiento,'dd/MM/YYYY')}"></td>
@@ -56,6 +76,21 @@
     </tr>
     </tbody>
 </table>
+<<<<<<< HEAD
+=======
+<div class="row">
+    <div class="col-sm-6">
+        <div sd:pagination-summary="">info</div>
+    </div>
+    <div class="col-sm-6">
+        <nav class="pull-right">
+            <ul class="pagination" sd:pagination="full">
+
+            </ul>
+        </nav>
+    </div>
+</div>
+>>>>>>> 2745562bca63603c9b3a057becc04471228b6d63
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
